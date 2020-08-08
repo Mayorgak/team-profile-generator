@@ -1,0 +1,26 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "jest": "^26.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mayorgak/team-profile-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mayorgak/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/Mayorgak/team-profile-generator#readme"
+}
