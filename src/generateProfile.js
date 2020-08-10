@@ -5,10 +5,11 @@ const renderEmployees = Employees => {
 const renderManager = Manager => {
     return `
     <div class="card mx-auto" style="width: 18rem">
-    <h5 class="card-header">${Manager.getRole()}</h5>
+  
+    <h5 class="card-header bg-primary">${Manager.getRole()}</h5>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">${Manager.name}</li>
-        <li class="list-group-item">${Manager.email}</li>
+        <li class="list-group-item"><a href="mailto:">${Manager.email}</a></li>
         <li class="list-group-item">${Manager.getOfficeNumber()}</li>
     </ul>
 </div>
@@ -19,11 +20,12 @@ const renderManager = Manager => {
 const renderEngineer = Engineer => {
   return `
     <div class="card mx-auto" style="width: 18rem">
-    <h5 class="card-header">${Engineer.getRole()}</h5>
+    
+    <h5 class="card-header bg-primary">${Engineer.getRole()}</h5>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">${Engineer.name}</li>
-        <li class="list-group-item">${Engineer.email}</li>
-        <li class="list-group-item">${Engineer.getGithub()}</li>
+        <li class="list-group-item"><a href="mailto:">${Engineer.email}</a></li>
+        <li class="list-group-item"><a href="https://github.com/">${Engineer.getGithub()}</a></li>
     </ul>
 </div>
 
@@ -34,10 +36,11 @@ const renderEngineer = Engineer => {
 const renderIntern = Intern => {
   return `
     <div class="card mx-auto" style="width: 18rem">
-    <h5 class="card-header">${Intern.getRole()}</h5>
+    
+    <h5 class="card-header bg-primary">${Intern.getRole()}</h5>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">${Intern.name}</li>
-        <li class="list-group-item">${Intern.email}</li>
+        <li class="list-group-item"><a href="mailto:">${Intern.email}</a></li>
         <li class="list-group-item">${Intern.getSchool()}</li>
     </ul>
 </div>
@@ -87,14 +90,17 @@ generatePage = teamArray => {
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/c502137733.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
   </head>
 
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 jumbotron mb-3 team-heading navbar-light" style="background-color: #e3f2fd;">
+        <div class="col-12 jumbotron mb-3 team-heading bg-warning">
           <h1 class="text-center">My Team</h1>
+        
+           
+          
         </div>
       </div>
     </div>
